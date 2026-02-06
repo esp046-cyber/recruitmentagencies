@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH SCADA & I&C Engineer Recruitment Guide 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 1%;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 1%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 1.3rem;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 1%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 1%;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: #4fc3f7;
+            margin: 2% 0 1% 0;
+            padding: 1%;
+            background: rgba(79, 195, 247, 0.15);
+            border-left: 4px solid #4fc3f7;
+            border-radius: 4px;
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1%;
+            margin-bottom: 2%;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .agency-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+            margin: 1.5% 0;
+            padding: 1%;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .agency-card:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .agency-name {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 0.5%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge {
+            background: #4caf50;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: normal;
+        }
+
+        .specialization {
+            color: #81d4fa;
+            font-size: 0.85rem;
+            margin: 1% 0;
+            font-weight: 600;
+        }
+
+        .info-item {
+            margin: 1% 0;
+            font-size: 0.85rem;
+            display: flex;
+            gap: 8px;
+            color: #e0e0e0;
+        }
+
+        .info-label {
+            color: #90caf9;
+            font-weight: 600;
+            min-width: 70px;
+        }
+
+        .contact-btn {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+            color: white;
+            padding: 1.5% 3%;
+            border: none;
+            border-radius: 6px;
+            margin-top: 1%;
+            font-size: 0.9rem;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+        }
+
+        .tips-section {
+            background: rgba(255, 193, 7, 0.15);
+            padding: 1%;
+            margin: 2% 0;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 193, 7, 0.3);
+        }
+
+        .tips-section h2 {
+            color: #ffc107;
+            border-left-color: #ffc107;
+        }
+
+        ul {
+            margin: 1% 0 1% 3%;
+            color: #e0e0e0;
+        }
+
+        li {
+            margin: 1% 0;
+            font-size: 0.85rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3%;
+            padding: 1%;
+            font-size: 0.8rem;
+            color: #b0bec5;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 2%;
+            margin: 1% 0 2% 0;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .search-box::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .filter-tags {
+            display: flex;
+            gap: 1%;
+            flex-wrap: wrap;
+            margin: 1% 0;
+        }
+
+        .filter-tag {
+            background: rgba(79, 195, 247, 0.3);
+            color: white;
+            padding: 1% 2.5%;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            border: 1px solid rgba(79, 195, 247, 0.5);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .filter-tag:active {
+            background: rgba(79, 195, 247, 0.6);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.15rem; }
+            h2 { font-size: 1rem; }
+            .agency-name { font-size: 0.95rem; }
+            .info-item, li { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇵🇭 2026 SCADA & I&C Engineer Recruitment Guide Philippines</h1>
+
+        <div class="intro">
+            <strong>Welcome!</strong> This guide connects SCADA (Supervisory Control and Data Acquisition) and Instrumentation & Control Engineers with top recruitment agencies in the Philippines specializing in industrial automation, process control, and engineering placements for 2026.
+        </div>
+
+        <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search agencies by name, location, or specialization...">
+
+        <div class="filter-tags">
+            <span class="filter-tag" onclick="filterAgencies('all')">All Agencies</span>
+            <span class="filter-tag" onclick="filterAgencies('scada')">SCADA Focus</span>
+            <span class="filter-tag" onclick="filterAgencies('international')">International</span>
+            <span class="filter-tag" onclick="filterAgencies('local')">Local Jobs</span>
+        </div>
+
+        <h2>🏢 Recruitment Agencies & Platforms for SCADA & I&C Engineers</h2>
+
+        <div id="agencyList">
+            <!-- Agency 1 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    JobStreet Philippines
+                    <span class="badge">Top Job Platform</span>
+                </div>
+                <div class="specialization">🎯 Instrumentation & Control Engineers | SCADA Engineers | Automation Engineers</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Online Platform (Philippines-wide)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Local Companies, MNCs, Manufacturing, Power, Oil & Gas</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>ph.jobstreet.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Search "instrumentation and control engineer" or "SCADA engineer"</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ph.jobstreet.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 2 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    Kalibrr
+                    <span class="badge">Tech & Engineering Platform</span>
+                </div>
+                <div class="specialization">🎯 Instrumentation Engineers | Control Engineers | SCADA Developers</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Online Platform (Philippines)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Tech Companies, Manufacturing, Energy Sector</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contact:</span>
+                    <span>hello@kalibrr.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>www.kalibrr.com</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://www.kalibrr.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 3 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    John Clements Consultants / EDI-Staffbuilders International
+                    <span class="badge">50 Years Experience</span>
+                </div>
+                <div class="specialization">🎯 Engineering Professionals | Technical Personnel | Overseas Placement</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>14F LKG Tower, Ayala Ave, Makati City</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Middle East, USA, Asia Pacific, Europe</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contact:</span>
+                    <span>Contact via website career portal</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>johnclements.com | careers.johnclements.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Handles engineers since 1974, EDI for overseas placement</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://careers.johnclements.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 4 -->
+            <div class="agency-card" data-category="local">
+                <div class="agency-name">
+                    Michael Page Philippines - Engineering & Manufacturing
+                </div>
+                <div class="specialization">🎯 Mid to Senior Engineers | Electrical | Mechanical | Automation</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>21F Zuellig Building, Makati Ave, Makati City</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>MNCs in Philippines, Regional Roles</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>www.michaelpage.com.ph</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Specializes in permanent placements for engineering professionals</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://www.michaelpage.com.ph', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 5 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    Aboitiz Power - Engineering Careers
+                </div>
+                <div class="specialization">🎯 Instrumentation & Control Engineers | SCADA | Power Plant Operations</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Multiple locations: Manila, Cebu, Bukidnon, Davao</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Philippine Power Generation & Distribution Projects</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>www.kalibrr.com/c/aboitiz-power-generation-group</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Direct employer - posts I&C engineer positions regularly</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://www.kalibrr.com/c/aboitiz-power-generation-group', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 6 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    Greatways Manpower International Inc.
+                    <span class="badge">DMW Licensed</span>
+                </div>
+                <div class="specialization">🎯 Skilled Professionals | Technical Personnel | Engineers for Overseas</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Metro Manila</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Global - 20+ countries across multiple sectors</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">DMW License:</span>
+                    <span>DMW-147-LB-07272023-R</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>greatwaysmanpower.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Since 1997, 10,000+ worker pool, 30-day deployment program</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://greatwaysmanpower.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 7 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    JTC International Manpower Services Inc.
+                    <span class="badge">POEA Licensed</span>
+                </div>
+                <div class="specialization">🎯 Technical Professionals | Engineers | Skilled Workers Overseas</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Unit 708, 7F Doña Felisa Syjuco Bldg, 1872 Remedios St, Manila</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>UAE, Kuwait, UK, Australia, Worldwide</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">POEA License:</span>
+                    <span>017-LB-012816-R</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>jtcmanpower.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Since 2005, affiliate offices in Perth, London, Dubai, Kuwait</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://jtcmanpower.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 8 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    Fil-HR Manpower Services & Development, Inc.
+                    <span class="badge">POEA Licensed</span>
+                </div>
+                <div class="specialization">🎯 Filipino Engineers | Technical Professionals | Overseas Recruitment</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>5 branches throughout Philippines</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>US, Middle East, New Zealand, Germany</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">POEA License:</span>
+                    <span>067-LB-050815-R</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>filhrmanpower.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>20+ years experience, deployed 500+ OFWs, 200+ employers served</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://filhrmanpower.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 9 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    AFRY Philippines
+                </div>
+                <div class="specialization">🎯 Control & Instrumentation Engineers | SCADA | Renewable Energy</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Philippines (posts for Tarlac, Calatrava, Negros Occidental)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Solar, Wind, Biomass Power Plants - Philippines & International</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>Search "AFRY Philippines jobs" on JobStreet or Indeed</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>100+ employees in PH, power sector consulting for 20 years</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ph.indeed.com/cmp/Afry', '_blank')">🌐 View Jobs</button>
+            </div>
+
+            <!-- Agency 10 -->
+            <div class="agency-card" data-category="local">
+                <div class="agency-name">
+                    Robert Walters Philippines
+                </div>
+                <div class="specialization">🎯 Professional Recruitment | Engineering & Technical Roles</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Metro Manila</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Philippines-based MNCs and Local Companies</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contact:</span>
+                    <span>philippines@robertwalters.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>www.robertwalters.com.ph</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Established 2016, specialist recruitment for professionals</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://www.robertwalters.com.ph', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 11 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    Light and Hope Overseas Placement Agency
+                    <span class="badge">DMW Licensed</span>
+                </div>
+                <div class="specialization">🎯 SCADA Engineers | Technical Professionals | Middle East Placement</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>105 Ground Floor, Pearl of the Orient Tower, 1240 Roxas Blvd, Manila</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Qatar, Middle East (especially District Cooling/SCADA roles)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>Search on workabroad.ph</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Posts SCADA engineer positions for Middle East employers</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://www.workabroad.ph', '_blank')">🌐 View Jobs</button>
+            </div>
+
+            <!-- Agency 12 -->
+            <div class="agency-card" data-category="local">
+                <div class="agency-name">
+                    Indeed Philippines
+                    <span class="badge">Job Search Platform</span>
+                </div>
+                <div class="specialization">🎯 All Engineering Roles Including SCADA & Instrumentation</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Online Platform (Philippines-wide)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>All sectors and locations in Philippines</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>ph.indeed.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Search "SCADA engineer" or "instrumentation control engineer"</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ph.indeed.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 13 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    E-GMP International Corporation
+                    <span class="badge">DMW Licensed</span>
+                </div>
+                <div class="specialization">🎯 Engineers | Healthcare | Construction | Oil & Gas Professionals</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>3rd Floor, MJL Building, 1175 Chino Roces Ave, Makati City</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Saudi Arabia, UAE, Kuwait, Qatar, Europe</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contact:</span>
+                    <span>+63 2 8523-1893 | +63 2 8526-1061</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">DMW License:</span>
+                    <span>161-LB-091019-R</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>egmpjobs.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>FREE processing, NO placement fees. Handles engineering & technical roles</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://egmpjobs.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 14 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    Magsaysay Global Services, Inc.
+                    <span class="badge">POEA Licensed</span>
+                </div>
+                <div class="specialization">🎯 Engineering & Trades | Oil & Gas | Healthcare | IT Professionals</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>G/F Suite 1A & 2/F, G.E. Antonino Bldg, J. Bocobo cor. T.M. Kalaw St, Ermita, Manila</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Middle East, USA, Canada, Europe, Asia</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contact:</span>
+                    <span>+63 2 8628-9600 | +63 2 5672222 ext 9781</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span>mgsi_recruitment@magsaysay.com.ph</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">POEA License:</span>
+                    <span>POEA-070-LB-022818-R</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>magsaysayglobal.com | careers.magsaysayglobal.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Part of Magsaysay Group, handles specialized engineering positions</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://careers.magsaysayglobal.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 15 -->
+            <div class="agency-card" data-category="international">
+                <div class="agency-name">
+                    IPAMS - Industrial Personnel and Management Services, Inc.
+                    <span class="badge">Presidential Awardee</span>
+                </div>
+                <div class="specialization">🎯 Engineering | Healthcare | Construction | IT | Skilled Professionals</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>IPAMS Bldg, 723 Aurora Blvd, New Manila, Quezon City</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Global - Multiple countries across all continents</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Contact:</span>
+                    <span>+63 2 8234-5640 | resumes.corp@ipams.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">DMW License:</span>
+                    <span>DMW-001-LB-01102024-PA</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>ipams.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Since 1972, ZERO fees charged. Presidential Award of Excellence winner</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ipams.com', '_blank')">🌐 Visit Website</button>
+            </div>
+
+            <!-- Agency 16 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    Yokogawa Philippines
+                </div>
+                <div class="specialization">🎯 DCS Engineers | SCADA | Safety Instrumented Systems | Process Control</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Philippines (posts jobs on Indeed, JobStreet)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Philippines and Regional Asia roles</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>Search "Yokogawa Philippines jobs" on job platforms</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Direct employer - global leader in DCS, SCADA, instrumentation systems</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ph.indeed.com/cmp/Yokogawa-Philippines-Inc.', '_blank')">🌐 View Jobs</button>
+            </div>
+
+            <!-- Agency 17 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    Maynilad Water Services
+                </div>
+                <div class="specialization">🎯 Wastewater Engineers | SCADA Operations | Water Treatment Control Systems</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Quezon City and various Metro Manila locations</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Philippines - Metro Manila water infrastructure</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>Search "Maynilad careers" on job platforms</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>Direct employer - Operations Control & Monitoring department</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ph.jobstreet.com/companies/maynilad-water-services-inc-65648880831329', '_blank')">🌐 View Jobs</button>
+            </div>
+
+            <!-- Agency 18 -->
+            <div class="agency-card" data-category="local scada">
+                <div class="agency-name">
+                    LinkedIn Philippines
+                    <span class="badge">Professional Network</span>
+                </div>
+                <div class="specialization">🎯 All SCADA & Instrumentation Engineering Positions</div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span>Online Platform (Global)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Placement:</span>
+                    <span>Local PH and International opportunities</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Website:</span>
+                    <span>linkedin.com/jobs</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Notes:</span>
+                    <span>249+ active SCADA engineer positions, direct applications to employers</span>
+                </div>
+                <button class="contact-btn" onclick="window.open('https://ph.linkedin.com/jobs/scada-engineer-jobs', '_blank')">🌐 Visit Website</button>
+            </div>
+        </div>
+
+        <div class="tips-section">
+            <h2>💡 Tips for SCADA & I&C Engineers Job Hunting in 2026</h2>
+            <ul>
+                <li><strong>Update Certifications:</strong> Ensure your ISA, NICET, or relevant SCADA certifications are current</li>
+                <li><strong>Build Portfolio:</strong> Document your automation projects, PLC programs, and HMI designs</li>
+                <li><strong>Key Skills to Highlight:</strong> Siemens, Allen Bradley, Wonderware, Ignition, Modbus, OPC protocols</li>
+                <li><strong>Verify POEA License:</strong> For overseas work, confirm agency has valid POEA accreditation</li>
+                <li><strong>Prepare Technical Interview:</strong> Review ladder logic, P&ID interpretation, and control loop tuning</li>
+                <li><strong>Salary Research:</strong> SCADA engineers in PH: ₱40k-100k/month; Overseas: $3k-8k/month</li>
+                <li><strong>Network:</strong> Join ISA Philippines Chapter and automation engineering groups on LinkedIn</li>
+                <li><strong>Language Skills:</strong> English proficiency essential; Arabic/Japanese is a plus for ME/Asia roles</li>
+            </ul>
+        </div>
+
+        <h2>📋 Required Documents Checklist</h2>
+        <div class="intro">
+            <ul>
+                <li>Updated Resume/CV with technical skills matrix</li>
+                <li>Diploma & Transcripts (Electrical/Electronics/Instrumentation Engineering)</li>
+                <li>Professional License (PRC License for Philippine Engineers)</li>
+                <li>Technical Certifications (PLC, SCADA, DCS training certificates)</li>
+                <li>Passport (valid for at least 2 years for overseas jobs)</li>
+                <li>NBI Clearance & Police Clearance</li>
+                <li>Medical Certificate & Drug Test Results</li>
+                <li>Reference Letters from previous employers</li>
+            </ul>
+        </div>
+
+        <h2>🎓 In-Demand SCADA & I&C Skills for 2026</h2>
+        <div class="intro">
+            <strong>Top Technical Skills:</strong>
+            <ul>
+                <li>SCADA Platforms: Wonderware System Platform, Ignition by Inductive Automation, GE iFIX</li>
+                <li>PLC Programming: Siemens TIA Portal, Allen Bradley Studio 5000, Schneider Unity Pro</li>
+                <li>DCS Systems: Honeywell Experion, Emerson DeltaV, Yokogawa Centum</li>
+                <li>Communication Protocols: Modbus TCP/RTU, OPC UA, Profibus, EtherNet/IP</li>
+                <li>Industrial Networks: Cisco Industrial Ethernet, redundant network design</li>
+                <li>Cybersecurity: IEC 62443, SCADA security best practices</li>
+                <li>Emerging Tech: Industrial IoT (IIoT), Edge Computing, Cloud SCADA</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Disclaimer:</strong> This guide contains real recruitment agencies and job platforms verified through research as of February 2026. For overseas employment, always verify agency credentials with DMW (Department of Migrant Workers, formerly POEA) before proceeding. Visit dmw.gov.ph to check licensed agencies.</p>
+            <p style="margin-top: 1%;"><strong>Important:</strong> Be vigilant against illegal recruiters. Never pay placement fees exceeding one month's salary as per DMW regulations.</p>
+            <p style="margin-top: 1%;">© 2026 SCADA & I&C Engineer Recruitment Guide Philippines | Last Updated: February 2026</p>
+        </div>
+    </div>
+
+    <script>
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const agencies = document.querySelectorAll('.agency-card');
+            
+            agencies.forEach(agency => {
+                const text = agency.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    agency.style.display = 'block';
+                } else {
+                    agency.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        function filterAgencies(category) {
+            const agencies = document.querySelectorAll('.agency-card');
+            
+            agencies.forEach(agency => {
+                if (category === 'all') {
+                    agency.style.display = 'block';
+                } else {
+                    const categories = agency.getAttribute('data-category');
+                    if (categories && categories.includes(category)) {
+                        agency.style.display = 'block';
+                    } else {
+                        agency.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active state feedback for filter tags
+        document.querySelectorAll('.filter-tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                document.querySelectorAll('.filter-tag').forEach(t => {
+                    t.style.background = 'rgba(79, 195, 247, 0.3)';
+                });
+                this.style.background = 'rgba(79, 195, 247, 0.6)';
+            });
+        });
+    </script>
+</body>
+</html>
